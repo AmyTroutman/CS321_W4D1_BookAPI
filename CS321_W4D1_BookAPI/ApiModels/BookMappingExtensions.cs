@@ -19,6 +19,7 @@ namespace CS321_W4D1_BookAPI.ApiModels
                 OriginaLanguage = book.OriginaLanguage,
                 PublicationYear = book.PublicationYear,
                 PublisherId = book.PublisherId,
+                Publisher = book.Publisher != null ? book.Publisher.Name + " " + book.Publisher.HeadQuartersLocation : null,
                 AuthorId = book.AuthorId,
                 Author = book.Author != null ? book.Author.LastName + " " + book.Author.FirstName : null
             };
