@@ -12,6 +12,8 @@ namespace CS321_W4D1_BookAPI.Data
         // TODO: implement a DbSet<Author> property
         public DbSet<Author> Authors { get; set; }
 
+        public DbSet<Publisher> Publishers { get; set; }
+
         // This method runs once when the DbContext is first used.
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -39,9 +41,9 @@ namespace CS321_W4D1_BookAPI.Data
 
             // TODO: configure some seed data in the books table
             modelBuilder.Entity<Book>().HasData(
-               new Book { Id = 1, Title = "The Grapes of Wrath", Genre = "Novel", PublicationYear = 1939, OriginalLanguage = "English", AuthorId = 1, PublisherId = 1 },
-               new Book { Id = 2, Title = "Cannery Row", Genre = "Regional", PublicationYear = 1945, OriginalLanguage = "English", AuthorId = 1, PublisherId = 1 },
-               new Book { Id = 3, Title = "The Shining", Genre = "Horror", PublicationYear = 1977, OriginalLanguage = "English", AuthorId = 2, PublisherId = 2 }
+               new Book { Id = 1, Title = "The Grapes of Wrath", Genre = "Novel", PublicationYear = 1939, OriginaLanguage = "English", AuthorId = 1, PublisherId = 1 },
+               new Book { Id = 2, Title = "Cannery Row", Genre = "Regional", PublicationYear = 1945, OriginaLanguage = "English", AuthorId = 1, PublisherId = 1 },
+               new Book { Id = 3, Title = "The Shining", Genre = "Horror", PublicationYear = 1977, OriginaLanguage = "English", AuthorId = 2, PublisherId = 2 }
             );
 
         }
