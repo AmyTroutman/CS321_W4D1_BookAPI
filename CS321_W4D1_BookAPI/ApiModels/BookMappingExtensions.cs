@@ -24,7 +24,7 @@ namespace CS321_W4D1_BookAPI.ApiModels
                 : null,
                 AuthorId = book.AuthorId,
                 Author = book.Author != null 
-                ? book.Author.LastName + " " + book.Author.FirstName 
+                ? book.Author.LastName + ", " + book.Author.FirstName 
                 : null
             };
         }

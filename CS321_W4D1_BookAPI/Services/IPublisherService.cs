@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CS321_W4D1_BookAPI.Services
 {
-    interface IPublisherService
+    public interface IPublisherService
     {
         //create
         Publisher Add(Publisher publisher);

@@ -21,5 +21,6 @@ namespace CS321_W4D1_BookAPI.Services
         IEnumerable<Book> GetBooksForAuthor(int authorId);
         //list publisher's books
         IEnumerable<Book> GetBooksForPublisher(int publisherId);
+
     }
 }
