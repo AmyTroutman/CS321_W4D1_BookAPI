@@ -15,7 +15,7 @@ namespace CS321_W4D1_BookAPI.ApiModels
                 Id = author.Id,
                 BirthDate = author.BirthDate,
                 FirstName = author.FirstName,
-                LastName = author.LastName,
+                LastName = author.LastName
             };
         }
 
@@ -26,7 +26,7 @@ namespace CS321_W4D1_BookAPI.ApiModels
                 Id = authorModel.Id,
                 BirthDate = authorModel.BirthDate,
                 FirstName = authorModel.FirstName,
-                LastName = authorModel.LastName,
+                LastName = authorModel.LastName
             };
         }
 
