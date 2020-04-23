@@ -46,7 +46,8 @@ namespace CS321_W4D1_BookAPI.Services
 
         public void Remove(Publisher publisher)
         {
-            throw new NotImplementedException();
+            _bookContext.Publishers.Remove(publisher);
+            _bookContext.SaveChanges();
         }
     }
 }
